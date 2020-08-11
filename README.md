@@ -20,9 +20,18 @@ Add the code to your project (not recommended) and run it on a string:
 // => `"lOrEm iPsUm dOlOr sIt aMeT, cOnSeCtEtUr aDiPiScInG ElIt"`
 ```
 
-To change all text occurrences on a webpage, add this as well:
+### Change all text occurrences on a webpage
+
+Open the console and copy/paste this, press <kbd>enter</kbd> and see the magic happen:
 
 ```javascript
+String.prototype.toAlternateCase = function () {
+    let r = "";
+    for (let i = 0; i < this.length; i++) {
+        r += i % 2 == 1 ? this[i].toUpperCase() : this[i].toLowerCase();
+    }
+    return r;
+}
 document.querySelectorAll("*").forEach((el) => {
     el.childNodes.forEach((child) => {
         if (child.nodeType === 3) child.nodeValue = child.textContent.toAlternateCase()
