@@ -20,6 +20,6 @@ Add the code to your project (not recommended) and run it on a string:
 // => `"lOrEm iPsUm dOlOr sIt aMeT, cOnSeCtEtUr aDiPiScInG ElIt"`
 ```
 
-eNjOy yOuR NeW StRiNgS iN aLtErNaTe cAsE
+__eNjOy yOuR NeW StRiNgS iN aLtErNaTe cAsE__
 
 ![](https://user-images.githubusercontent.com/5780704/89944710-8d8b4400-dc20-11ea-8126-cb043aa16cf9.png)
