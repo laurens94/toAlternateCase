@@ -20,7 +20,7 @@ Add the code to your project (not recommended) and run it on a string:
 // => `"lOrEm iPsUm dOlOr sIt aMeT, cOnSeCtEtUr aDiPiScInG ElIt"`
 ```
 
-### To change all text occurrences on a webpage, add this as well:
+To change all text occurrences on a webpage, add this as well:
 
 ```javascript
 document.querySelectorAll("*").forEach((el) => {
