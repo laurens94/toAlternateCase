@@ -20,6 +20,16 @@ Add the code to your project (not recommended) and run it on a string:
 // => `"lOrEm iPsUm dOlOr sIt aMeT, cOnSeCtEtUr aDiPiScInG ElIt"`
 ```
 
+### To change all text occurrences on a webpage, add this as well:
+
+```javascript
+document.querySelectorAll("*").forEach((el) => {
+    el.childNodes.forEach((child) => {
+        if (child.nodeType === 3) child.nodeValue = child.textContent.toAlternateCase()
+    })
+})
+```
+
 __eNjOy yOuR NeW StRiNgS iN aLtErNaTe cAsE__
 
 ![](https://user-images.githubusercontent.com/5780704/89944710-8d8b4400-dc20-11ea-8126-cb043aa16cf9.png)
